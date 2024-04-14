@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./src/app.css">
+</head>
+
+<body class="bg-blue-100">
+
+    <div class="container-sm mx-auto px-5 m-[10px]">
+        <h1 class="text-center text-4xl">Hello</h1>
+
+
+        <form action="" method="post" id="post-form">
+            <div class="form-group">
+                <label for="title">Enter title</label>
+                <input type="text" id="title" class="w-full border-4 border-blue-200 px-2 py-1">
+            </div>
+            <div class="form-group">
+                <label for="content">Enter content</label>
+                <textarea id="content" cols="255" rows="10" class="px-2 py-1 border-4 border-blue-200"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image-path">Enter image path</label>
+                <input type="text" id="image-path" class="w-full border-2 border-[pink] px-2 py-1">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="w-full py-2 bg-[#000] text-[#fff] mt-2">
+            </div>
+        </form>
+
+
+
+        <div class="posts-container bg-blue-300 p-[10px]">
+
+        </div>
+
+    </div>
+
+    <script src="./src/post.js"></script>
+
+</body>
+
+</html>

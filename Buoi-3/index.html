@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper bg-[#088395] fixed top-0 right-0 left-0 bottom-0">
+        <div class="weather-container max-w-[500px] mx-auto mt-[100px] p-4 rounded-lg">
+            <h1 class="text-center text-2xl">Weather 24/7</h1>
+
+            <form id="search-form" class="flex justify-center mt-4">
+                <input type="text" placeholder="Search city..." id="city-input" class="px-2 py-1 rounded w-2/3" />
+
+                <input type="submit" value="Search" class="bg-[#35A29F] p-1 rounded" />
+            </form>
+
+            <div class="weather-content text-center">
+                <!-- city name -->
+                <h2 class="text-xl mt-4 d-flex">
+                    <span>Thành phố:</span>
+                    <span class="city-name"></span>
+                </h2>
+
+                <!-- Description -->
+                <h3 class="description"></h3>
+
+                <!-- Temperature -->
+                <h3 class="temperature text-4xl">0</h3>
+                <!-- weather icon -->
+
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon inline-block" alt="" />
+
+                <h3 class="wind"></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
